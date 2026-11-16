@@ -29,7 +29,7 @@ $shareImage = $page['type'] === 'post' && $page['post']['cover'] !== '' ? SITE_U
         <script type="application/ld+json"><?= json_encode(['@context' => 'https://schema.org', '@type' => 'BlogPosting', 'headline' => $p['title'], 'description' => $p['description'], 'datePublished' => $p['date'], 'mainEntityOfPage' => $page['canonical'], 'author' => ['@type' => 'Person', 'name' => SITE_NAME], 'image' => $shareImage], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?></script>
     <?php endif; ?>
 </head>
-<body class="<?= $page['type'] === 'home' ? 'home-body' : '' ?>">
+<body class="<?= $page['type'] === 'home' ? 'home-body' : 'site-dark-body' ?>">
 <header class="site-header">
     <div class="wrap nav-wrap"><a class="brand" href="/">Paulo Bezerra<span>.</span></a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
