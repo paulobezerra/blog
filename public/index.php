@@ -1,6 +1,17 @@
 <?php
 declare(strict_types=1);
 
+if (PHP_SAPI === 'cli-server') {
+    $requestPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
+    $requestedFile = is_string($requestPath) ? realpath(__DIR__ . rawurldecode($requestPath)) : false;
+    $publicRoot = realpath(__DIR__);
+    if ($requestedFile !== false && $publicRoot !== false
+        && str_starts_with($requestedFile, $publicRoot . DIRECTORY_SEPARATOR)
+        && is_file($requestedFile)) {
+        return false;
+    }
+}
+
 $projectRoot = dirname(__DIR__);
 require $projectRoot . '/vendor/autoload.php';
 require $projectRoot . '/src/Posts.php';
@@ -19,7 +30,8 @@ if ($route === 'sitemap') {
     foreach ($items as $post) $urls[] = SITE_URL . '/blog/' . rawurlencode($post['slug']);
     echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n";
     foreach ($urls as $url) echo '  <url><loc>' . htmlspecialchars($url, ENT_XML1 | ENT_QUOTES, 'UTF-8') . "</loc></url>\n";
-    echo "</urlset>\n"; exit;
+    echo "</urlset>\n";
+    exit;
 }
 if ($route === '' || $route === 'index.php') {
     $page['type'] = 'home';
@@ -27,14 +39,17 @@ if ($route === '' || $route === 'index.php') {
     $page = ['type' => 'blog', 'title' => 'Blog | ' . SITE_NAME, 'description' => 'Artigos sobre tecnologia, desenvolvimento, hospedagem e ferramentas digitais.'];
 } elseif (preg_match('~^blog/(.*)$~', $route, $match)) {
     $post = $posts->find($match[1]);
-    if ($post === null || !$post['published']) { $status = 404; $page = ['type' => '404', 'title' => 'Página não encontrada | ' . SITE_NAME, 'description' => 'O conteúdo solicitado não foi encontrado.']; }
-    else $page = ['type' => 'post', 'title' => $post['title'] . ' | ' . SITE_NAME, 'description' => $post['description'], 'post' => $post];
+    if ($post === null || !$post['published']) {
+        $status = 404;
+        $page = ['type' => '404', 'title' => 'Página não encontrada | ' . SITE_NAME, 'description' => 'O conteúdo solicitado não foi encontrado.'];
+    } else $page = ['type' => 'post', 'title' => $post['title'] . ' | ' . SITE_NAME, 'description' => $post['description'], 'post' => $post];
 } elseif (in_array($route, ['sobre', 'contato', 'privacidade'], true)) {
     $titles = ['sobre' => 'Sobre', 'contato' => 'Contato', 'privacidade' => 'Privacidade'];
     $descriptions = ['sobre' => 'Conheça Paulo Bezerra e o propósito deste blog.', 'contato' => 'Como entrar em contato com Paulo Bezerra.', 'privacidade' => 'Informações sobre privacidade e uso de dados neste site.'];
     $page = ['type' => $route, 'title' => $titles[$route] . ' | ' . SITE_NAME, 'description' => $descriptions[$route]];
 } else {
-    $status = 404; $page = ['type' => '404', 'title' => 'Página não encontrada | ' . SITE_NAME, 'description' => 'O conteúdo solicitado não foi encontrado.'];
+    $status = 404;
+    $page = ['type' => '404', 'title' => 'Página não encontrada | ' . SITE_NAME, 'description' => 'O conteúdo solicitado não foi encontrado.'];
 }
 http_response_code($status);
 $canonicalPath = $route === '' || $route === 'index.php' ? '/' : '/' . $route;
