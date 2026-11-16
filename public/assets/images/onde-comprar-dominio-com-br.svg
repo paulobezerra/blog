@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+<title id="title">Escolha e registro de um domínio</title>
+<desc id="desc">Globo em uma janela conectado a uma chave e a uma confirmação de registro sobre fundo escuro.</desc>
+<rect width="1200" height="470" fill="#142033"/><circle cx="144" cy="49" r="3" fill="#92e6c4" opacity="0.10"/><circle cx="803" cy="321" r="6" fill="#92e6c4" opacity="0.10"/><circle cx="368" cy="43" r="3" fill="#92e6c4" opacity="0.10"/><circle cx="373" cy="33" r="4" fill="#92e6c4" opacity="0.10"/><circle cx="107" cy="385" r="5" fill="#92e6c4" opacity="0.10"/><circle cx="347" cy="375" r="7" fill="#92e6c4" opacity="0.10"/><circle cx="875" cy="51" r="4" fill="#92e6c4" opacity="0.10"/><circle cx="947" cy="398" r="6" fill="#92e6c4" opacity="0.10"/><circle cx="589" cy="266" r="4" fill="#92e6c4" opacity="0.10"/><circle cx="677" cy="117" r="5" fill="#92e6c4" opacity="0.10"/><circle cx="262" cy="254" r="2" fill="#92e6c4" opacity="0.10"/><circle cx="864" cy="294" r="5" fill="#92e6c4" opacity="0.10"/><circle cx="297" cy="112" r="2" fill="#92e6c4" opacity="0.10"/><circle cx="573" cy="410" r="3" fill="#92e6c4" opacity="0.10"/><circle cx="350" cy="369" r="3" fill="#92e6c4" opacity="0.10"/><circle cx="835" cy="42" r="5" fill="#92e6c4" opacity="0.10"/><circle cx="667" cy="88" r="3" fill="#92e6c4" opacity="0.10"/><circle cx="987" cy="81" r="6" fill="#92e6c4" opacity="0.10"/><circle cx="1019" cy="354" r="5" fill="#92e6c4" opacity="0.10"/><circle cx="547" cy="208" r="3" fill="#92e6c4" opacity="0.10"/><circle cx="512" cy="66" r="3" fill="#92e6c4" opacity="0.10"/><circle cx="792" cy="271" r="7" fill="#92e6c4" opacity="0.10"/><circle cx="320" cy="151" r="5" fill="#92e6c4" opacity="0.10"/><circle cx="657" cy="336" r="4" fill="#92e6c4" opacity="0.10"/><circle cx="321" cy="353" r="5" fill="#92e6c4" opacity="0.10"/><circle cx="896" cy="239" r="7" fill="#92e6c4" opacity="0.10"/><circle cx="881" cy="345" r="7" fill="#92e6c4" opacity="0.10"/><circle cx="89" cy="209" r="3" fill="#92e6c4" opacity="0.10"/>
+<g fill="none" stroke="#92e6c4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<rect x="195" y="85" width="385" height="300" rx="24" fill="#1d3045"/>
+<path d="M195 135h385" opacity=".5"/>
+<circle cx="222" cy="110" r="3"/><circle cx="242" cy="110" r="3"/><circle cx="262" cy="110" r="3"/>
+<circle cx="387" cy="255" r="95"/><ellipse cx="387" cy="255" rx="40" ry="95"/>
+<path d="M292 255h190M308 204h158M308 306h158" opacity=".65"/>
+<path d="M580 255h96v-80h60M676 255v75h115" stroke-dasharray="8 12"/>
+<circle cx="777" cy="175" r="40"/><path d="M817 175h164v27m-34-27v21" stroke-width="10"/>
+<circle cx="870" cy="330" r="63" fill="#213f43"/><path d="m839 330 23 23 41-47" stroke="#d6f3a7" stroke-width="9"/>
+</g></svg>

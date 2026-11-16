@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#111512"/>
-  <path d="M88 92h1024M88 538h1024" stroke="#39443c" stroke-width="2"/>
-  <text x="96" y="177" fill="#a4f15e" font-family="monospace" font-size="22" font-weight="700" letter-spacing="5">TECNOLOGIA · DESENVOLVIMENTO · WEB</text>
-  <text x="88" y="330" fill="#f2f4f1" font-family="monospace" font-size="104" font-weight="700" letter-spacing="-8">PAULO</text>
-  <text x="88" y="436" fill="#f2f4f1" font-family="monospace" font-size="104" font-weight="700" letter-spacing="-8">BEZERRA<tspan fill="#a4f15e">.</tspan></text>
-  <text x="96" y="585" fill="#9aa69d" font-family="monospace" font-size="18" letter-spacing="3">PAULOBEZERRA.ETI.BR</text>
-</svg>

@@ -24,7 +24,13 @@ final class Posts
     {
         if (!preg_match('/^[a-z0-9]+(?:-[a-z0-9]+)*$/', $slug)) return null;
         $file = $this->directory . '/' . $slug . '.md';
-        return is_file($file) ? $this->read($file) : null;
+        if (is_file($file)) return $this->read($file);
+        foreach (glob($this->directory . '/????_??_??_' . $slug . '.md') ?: [] as $datedFile) {
+            if (preg_match('/^\d{4}_\d{2}_\d{2}_' . preg_quote($slug, '/') . '\.md$/D', basename($datedFile))) {
+                return $this->read($datedFile);
+            }
+        }
+        return null;
     }
 
     /** @return array<string, mixed>|null */
@@ -36,7 +42,7 @@ final class Posts
         foreach (preg_split('/\R/', $matches[1]) ?: [] as $line) {
             if (preg_match('/^([a-z_]+):\s*(.*?)\s*$/', $line, $item)) $meta[$item[1]] = trim($item[2], " \t\"'");
         }
-        $slug = basename($file, '.md');
+        $slug = preg_replace('/^\d{4}_\d{2}_\d{2}_/', '', basename($file, '.md')) ?? basename($file, '.md');
         $published = strtolower((string)($meta['published'] ?? 'false')) === 'true';
         $body = $matches[2];
         $articleTitle = $meta['title'] ?? $slug;

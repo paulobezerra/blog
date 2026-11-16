@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title">
+<title id="title">Domínio e hospedagem integrados</title>
+<rect width="1200" height="470" fill="#14241d"/>
+<circle cx="93" cy="266" r="7" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="760" cy="103" r="4" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="259" cy="201" r="2" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="895" cy="260" r="6" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="82" cy="232" r="3" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="974" cy="328" r="15" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="1028" cy="37" r="14" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="1134" cy="250" r="11" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="37" cy="250" r="8" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="53" cy="223" r="14" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="419" cy="218" r="5" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="994" cy="416" r="10" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="768" cy="336" r="10" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="679" cy="110" r="3" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="1137" cy="342" r="16" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="72" cy="184" r="3" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="201" cy="182" r="9" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="312" cy="429" r="15" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="888" cy="122" r="12" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="117" cy="353" r="4" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="892" cy="111" r="8" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="794" cy="277" r="7" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="1049" cy="245" r="6" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="965" cy="429" r="2" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="930" cy="306" r="2" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="313" cy="301" r="7" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="397" cy="166" r="14" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="1032" cy="108" r="10" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="436" cy="256" r="16" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="412" cy="390" r="18" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="709" cy="396" r="6" fill="#a8e6ac" opacity="0.08"/>
+<circle cx="981" cy="97" r="17" fill="#a8e6ac" opacity="0.08"/>
+<g stroke="#a8e6ac" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<rect x="240" y="56" width="720" height="358" rx="24" fill="#a8e6ac" fill-opacity="0.04"/>
+<path d="M240 106h720" opacity="0.4"/>
+<circle cx="271" cy="82" r="4"/><circle cx="291" cy="82" r="4"/><circle cx="311" cy="82" r="4"/>
+<circle cx="422" cy="256" r="78"/>
+<ellipse cx="422" cy="256" rx="33" ry="78"/>
+<path d="M344 256h156M356 216h132M356 296h132" opacity="0.65"/>
+<rect x="653" y="173" width="210" height="46" rx="9" fill="#a8e6ac" fill-opacity="0.09"/>
+<circle cx="675" cy="196" r="5" fill="#a8e6ac" stroke="none"/>
+<path d="M700 196h67m46 -7v14m10 -14v14m10 -14v14"/>
+<rect x="653" y="234" width="210" height="46" rx="9" fill="#a8e6ac" fill-opacity="0.09"/>
+<circle cx="675" cy="257" r="5" fill="#a8e6ac" stroke="none"/>
+<path d="M700 257h67m46 -7v14m10 -14v14m10 -14v14"/>
+<rect x="653" y="295" width="210" height="46" rx="9" fill="#a8e6ac" fill-opacity="0.09"/>
+<circle cx="675" cy="318" r="5" fill="#a8e6ac" stroke="none"/>
+<path d="M700 318h67m46 -7v14m10 -14v14m10 -14v14"/>
+<path d="M514 256H633" stroke-dasharray="6 10" opacity="0.65"/>
+<path d="m621 247 12 9 -12 9"/>
+</g>
+</svg>

@@ -29,12 +29,15 @@ $shareImage = $page['type'] === 'post' && $page['post']['cover'] !== '' ? SITE_U
         <script type="application/ld+json"><?= json_encode(['@context' => 'https://schema.org', '@type' => 'BlogPosting', 'headline' => $p['title'], 'description' => $p['description'], 'datePublished' => $p['date'], 'mainEntityOfPage' => $page['canonical'], 'author' => ['@type' => 'Person', 'name' => SITE_NAME], 'image' => $shareImage], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?></script>
     <?php endif; ?>
 </head>
-<body class="<?= $page['type'] === 'home' ? 'home-body' : 'site-dark-body' ?>">
+<body class="site-dark-body">
 <header class="site-header">
     <div class="wrap nav-wrap"><a class="brand" href="/">Paulo Bezerra<span>.</span></a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
-        <nav id="main-nav" aria-label="Navegação principal"><a href="/">Início</a><a href="/blog">Blog</a><a
-                    href="/sobre">Sobre</a></nav>
+        <nav id="main-nav" aria-label="Navegação principal">
+            <?php foreach (['home' => ['/', 'Início'], 'blog' => ['/blog', 'Artigos'], 'hosting' => ['/melhores-hospedagens', 'Hospedagens'], 'sobre' => ['/sobre', 'Sobre'], 'contato' => ['/contato', 'Contato']] as $type => [$href, $label]): ?>
+                <a href="<?= e($href) ?>"<?= $page['type'] === $type ? ' aria-current="page"' : ($type === 'blog' && $page['type'] === 'post' ? ' aria-current="location"' : '') ?>><?= e($label) ?></a>
+            <?php endforeach; ?>
+        </nav>
     </div>
 </header>
 <main>
@@ -42,6 +45,8 @@ $shareImage = $page['type'] === 'post' && $page['post']['cover'] !== '' ? SITE_U
                 'home' => 'home.php',
                 'blog' => 'blog.php',
                 'post' => 'post.php',
+                'hosting' => 'hosting.php',
+                'hosting-wizard' => 'hosting-wizard.php',
                 'sobre' => 'sobre.php',
                 'contato' => 'contato.php',
                 'privacidade' => 'privacidade.php',
