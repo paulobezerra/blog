@@ -1,0 +1,1 @@
+<section class="simple-page wrap not-found"><p class="eyebrow">ERRO 404</p><h1>Esta página não está por aqui.</h1><p>O endereço pode estar incorreto ou o conteúdo foi removido.</p><a class="text-link" href="/">Voltar ao início <span aria-hidden="true">→</span></a></section>

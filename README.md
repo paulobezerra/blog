@@ -12,7 +12,7 @@ Blog editorial em PHP 8.2+ que lê arquivos Markdown em cada requisição. Não 
 
 ```bash
 composer install
-php -S 127.0.0.1:8000
+php -S 127.0.0.1:8000 -t public public/index.php
 ```
 
 Abra <http://127.0.0.1:8000>. O servidor embutido do PHP não aplica `.htaccess`; teste as URLs amigáveis em Apache.
@@ -29,13 +29,13 @@ O Markdown é convertido por `league/commonmark`, instalado em `vendor/`. Inclua
 
 ## Publicar em hospedagem compartilhada
 
-1. Aponte o domínio para a pasta pública deste projeto e confirme PHP 8.2+.
-2. Envie os arquivos do projeto, incluindo `vendor/`, `.htaccess` e os diretórios `content/`, `src/`, `templates/` e `assets/`.
+1. Aponte o document root do domínio para a pasta `public/` e confirme PHP 8.2+.
+2. Envie o projeto completo, incluindo `vendor/`, `content/`, `src/`, `templates/` e `public/`. Apenas `public/` deve ser acessível pelo domínio; mantenha Composer e os demais diretórios fora do document root.
 3. Ative `mod_rewrite` e permita `.htaccess`. O site precisa ler os Markdown e a dependência; não precisa gravar arquivos.
 4. Confira as páginas `/`, `/blog`, `/sobre`, `/contato`, `/privacidade` e `/sitemap.xml`.
-5. Se usar outro domínio, altere `SITE_URL` em `index.php` e a linha `Sitemap` em `robots.txt`.
+5. Se usar outro domínio, altere `SITE_URL` em `public/index.php` e a linha `Sitemap` em `public/robots.txt`.
 
-O `.htaccess` bloqueia o acesso HTTP a `content/`, `src/`, `templates/`, `vendor/` e arquivos de configuração. Mantenha-os dentro da raiz configurada para o site e não publique credenciais nesse repositório.
+O único `.htaccess` fica em `public/` e direciona as rotas ao front controller. Como os arquivos de aplicação, conteúdo, dependências e configuração ficam fora do document root, não são servidos pelo Apache. Não publique credenciais nesse repositório.
 
 ## Criar um artigo
 
@@ -63,7 +63,7 @@ São aceitos títulos, parágrafos, listas, tabelas, links, imagens, citações 
 
 ## Imagens e links comerciais
 
-Coloque imagens em `assets/images/` e use o caminho público começando por `/assets/images/`. Prefira arquivos otimizados, com dimensões adequadas ao uso. A capa aparece nos cards e no artigo; artigos sem capa recebem um bloco visual neutro.
+Coloque imagens em `public/assets/images/` e use o caminho público começando por `/assets/images/`. Prefira arquivos otimizados, com dimensões adequadas ao uso. A capa aparece nos cards e no artigo; artigos sem capa recebem um bloco visual neutro.
 
 Links comuns usam a sintaxe Markdown habitual. Para um CTA destacado, use uma linha com:
 
@@ -81,5 +81,5 @@ Esses dois marcadores ativam o aviso de transparência no artigo. Use-os apenas 
 
 ## Dados pessoais e domínio
 
-Altere `SITE_NAME` e `SITE_URL` em `index.php`, o e-mail nas páginas `templates/contato.php` e `templates/privacidade.php`, o nome e a apresentação em `templates/sobre.php`, e a URL do sitemap em `robots.txt`. Ajuste também o conteúdo de privacidade se adicionar ferramentas de análise, publicidade ou coleta de dados.
+Altere `SITE_NAME` e `SITE_URL` em `public/index.php`, o e-mail nas páginas `templates/contato.php` e `templates/privacidade.php`, o nome e a apresentação em `templates/sobre.php`, e a URL do sitemap em `public/robots.txt`. Ajuste também o conteúdo de privacidade se adicionar ferramentas de análise, publicidade ou coleta de dados.
 # blog

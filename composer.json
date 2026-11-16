@@ -1,0 +1,7 @@
+{
+  "require": {
+    "php": ">=8.2",
+    "league/commonmark": "^2.6"
+  },
+  "config": {"optimize-autoloader": true, "sort-packages": true}
+}

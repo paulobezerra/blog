@@ -1,0 +1,1 @@
+<section class="simple-page wrap"><p class="eyebrow">FALE COMIGO</p><h1>Contato</h1><div class="prose"><p>Para dúvidas, sugestões ou correções sobre os artigos, escreva para <a href="mailto:contato@paulobezerra.eti.br">contato@paulobezerra.eti.br</a>.</p></div></section>
