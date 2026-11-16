@@ -18,7 +18,7 @@ $shareImage = $page['type'] === 'post' && $page['post']['cover'] !== '' ? SITE_U
 <body>
 <header class="site-header"><div class="wrap nav-wrap"><a class="brand" href="/">Paulo Bezerra<span>.</span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button><nav id="main-nav" aria-label="Navegação principal"><a href="/">Início</a><a href="/blog">Blog</a><a href="/sobre">Sobre</a></nav></div></header>
 <main>
-<?php require __DIR__ . '/' . match ($page['type']) { 'home'=>'templates/home.php', 'blog'=>'templates/blog.php', 'post'=>'templates/post.php', 'sobre'=>'templates/sobre.php', 'contato'=>'templates/contato.php', 'privacidade'=>'templates/privacidade.php', default=>'templates/404.php' }; ?>
+<?php require __DIR__ . '/' . match ($page['type']) { 'home'=>'home.php', 'blog'=>'blog.php', 'post'=>'post.php', 'sobre'=>'sobre.php', 'contato'=>'contato.php', 'privacidade'=>'privacidade.php', default=>'404.php' }; ?>
 </main>
 <footer class="site-footer"><div class="wrap footer-inner"><span>© <?= date('Y') ?> Paulo Bezerra</span><nav aria-label="Links do rodapé"><a href="/contato">Contato</a><a href="/privacidade">Privacidade</a></nav></div></footer>
 </body></html>
