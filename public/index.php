@@ -18,6 +18,8 @@ require $projectRoot . '/src/Posts.php';
 
 const SITE_NAME = 'Paulo Bezerra';
 const SITE_URL = 'https://paulobezerra.eti.br';
+$analyticsId = getenv('GA4_MEASUREMENT_ID') ?: '';
+$analyticsId = preg_match('/\AG-[A-Z0-9]+\z/', $analyticsId) ? $analyticsId : '';
 $posts = new Posts($projectRoot . '/content/posts');
 $route = trim((string)($_GET['route'] ?? parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH)), '/');
 $page = ['type' => 'home', 'title' => SITE_NAME, 'description' => 'Tecnologia, desenvolvimento de software e ferramentas digitais, com ideias práticas para a web.'];

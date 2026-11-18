@@ -37,6 +37,16 @@ O Markdown é convertido por `league/commonmark`, instalado em `vendor/`. Inclua
 
 O único `.htaccess` fica em `public/` e direciona as rotas ao front controller. Como os arquivos de aplicação, conteúdo, dependências e configuração ficam fora do document root, não são servidos pelo Apache. Não publique credenciais nesse repositório.
 
+## Google Analytics 4
+
+Crie uma propriedade GA4 e um fluxo de dados da Web para o domínio. Configure a variável de ambiente `GA4_MEASUREMENT_ID` no ambiente PHP da hospedagem com o ID de medição do fluxo (formato `G-...`); sem um ID válido, a tag não é carregada. Para testar localmente, inicie o servidor com `GA4_MEASUREMENT_ID=G-SEUID php -S 127.0.0.1:8000 -t public public/index.php`.
+
+No fluxo da Web, ative a medição otimizada e a opção de cliques de saída. A tag registra visualizações de página; consulte `/melhores-hospedagens` no relatório de páginas e use o evento automático `click` e a URL do link para analisar saídas para fornecedores. Outros links externos também geram esse evento; links que não forem reconhecidos como externos, incluindo domínios configurados para medição entre domínios, não serão contados como saídas. Não há evento personalizado de venda.
+
+Identifique campanhas com parâmetros UTM (por exemplo, `utm_source`, `utm_medium` e `utm_campaign`) e consulte os relatórios de aquisição. Evite dados pessoais nas URLs e nos parâmetros de campanha. Confira a coleta em Tempo real ou DebugView após configurar a propriedade. Cliques não são vendas: acompanhe as comissões confirmadas no painel de cada programa de afiliados.
+
+Antes de ativar a tag, avalie os requisitos legais de privacidade e consentimento aplicáveis ao público do site e implemente os controles necessários. Revise também as configurações de retenção e compartilhamento de dados na propriedade do Analytics.
+
 ## Criar um artigo
 
 Crie um arquivo `.md` em `content/posts/`. O nome do arquivo vira o slug, por exemplo `guia-de-backups.md` gera `/blog/guia-de-backups`.
