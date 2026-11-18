@@ -15,7 +15,7 @@ $faq = [
             <h1>Encontre a hospedagem que faz sentido para seu projeto</h1>
             <p class="hosting-lead">Seu site precisa de um lugar para crescer. Sua aplicação pode precisar de mais controle. Compare cinco opções de hospedagem compartilhada e cinco de VPS: entenda para quem cada uma serve e o que conferir antes de investir.</p>
             <nav class="hosting-jump" aria-label="Ir para uma categoria"><a href="#compartilhada">Hospedagem compartilhada <span>↓</span></a><a href="#vps">Hospedagem VPS <span>↓</span></a></nav>
-            <aside class="hosting-disclosure"><strong>Transparência:</strong> a página pode receber comissão por compras feitas por links indicados, sem custo adicional decorrente da indicação. Comissão não determina a posição. No momento, nenhum link de afiliado está cadastrado; os botões levam às páginas oficiais.</aside>
+            <aside class="hosting-disclosure"><strong>Transparência:</strong> a página pode receber comissão por compras feitas por links indicados, sem custo adicional decorrente da indicação. Comissão não determina a posição. Os links comerciais da KingHost são links de afiliados.</aside>
         </div>
     </header>
     <div class="hosting-wrap hosting-body">
@@ -35,7 +35,7 @@ $faq = [
                         <div class="provider-content"><div class="provider-main"><h3><?= e($provider['name']) ?></h3><p><?= e($provider['description']) ?></p><p class="provider-profile"><strong>Indicado para:</strong> <?= e($provider['profile']) ?></p><a class="provider-source" href="<?= e($provider['evidence']) ?>" target="_blank" rel="noopener">Ver fonte e condições consultadas ↗</a></div>
                             <div class="provider-offer"><span class="offer-label">Preço inicial consultado</span><strong><?= e($provider['price'] ?? 'Consulte os planos') ?></strong><p><?= e($provider['conditions']) ?></p><a class="button-link provider-button" href="<?= e($cta) ?>" target="_blank"<?= $provider['affiliate'] ? ' rel="sponsored nofollow noopener"' : ' rel="noopener"' ?>>Ver planos da <?= e($provider['name']) ?> ↗</a></div></div>
                         <div class="provider-details"><div><h4>O que oferece</h4><ul><?php foreach ($provider['advantages'] as $item): ?><li><?= e($item) ?></li><?php endforeach; ?></ul></div><div><h4>Confira antes de contratar</h4><ul><?php foreach ($provider['limitations'] as $item): ?><li><?= e($item) ?></li><?php endforeach; ?></ul></div></div>
-                        <p class="verified-date">Verificação editorial: <time datetime="<?= e($provider['verified']) ?>"><?= e(date('d/m/Y', strtotime($provider['verified']))) ?></time> · <a href="<?= e($provider['official']) ?>" target="_blank" rel="noopener">Site oficial</a></p>
+                        <p class="verified-date">Verificação editorial: <time datetime="<?= e($provider['verified']) ?>"><?= e(date('d/m/Y', strtotime($provider['verified']))) ?></time> · <a href="<?= e($provider['affiliate'] ?: $provider['official']) ?>" target="_blank"<?= $provider['affiliate'] ? ' rel="sponsored nofollow noopener"' : ' rel="noopener"' ?>>Site oficial</a></p>
                     </article>
                 <?php endforeach; ?>
                 </div>
