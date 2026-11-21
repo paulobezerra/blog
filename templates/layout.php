@@ -52,7 +52,6 @@ $shareImage = $page['type'] === 'post' && $page['post']['cover'] !== '' ? SITE_U
                 'blog' => 'blog.php',
                 'post' => 'post.php',
                 'hosting' => 'hosting.php',
-                'hosting-wizard' => 'hosting-wizard.php',
                 'sobre' => 'sobre.php',
                 'contato' => 'contato.php',
                 'privacidade' => 'privacidade.php',

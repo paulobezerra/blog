@@ -28,7 +28,7 @@ $status = 200;
 
 if ($route === 'sitemap') {
     header('Content-Type: application/xml; charset=utf-8');
-    $urls = [SITE_URL . '/', SITE_URL . '/blog', SITE_URL . '/sobre', SITE_URL . '/contato', SITE_URL . '/privacidade', SITE_URL . '/melhores-hospedagens', SITE_URL . '/escolher-hospedagem'];
+    $urls = [SITE_URL . '/', SITE_URL . '/blog', SITE_URL . '/sobre', SITE_URL . '/contato', SITE_URL . '/privacidade', SITE_URL . '/melhores-hospedagens'];
     foreach ($items as $post) $urls[] = SITE_URL . '/blog/' . rawurlencode($post['slug']);
     echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n";
     foreach ($urls as $url) echo '  <url><loc>' . htmlspecialchars($url, ENT_XML1 | ENT_QUOTES, 'UTF-8') . "</loc></url>\n";
@@ -40,11 +40,11 @@ if ($route === '' || $route === 'index.php') {
 } elseif ($route === 'blog') {
     $page = ['type' => 'blog', 'title' => 'Blog | ' . SITE_NAME, 'description' => 'Artigos sobre tecnologia, desenvolvimento, hospedagem e ferramentas digitais.'];
 } elseif ($route === 'escolher-hospedagem') {
-    require $projectRoot . '/src/HostingProviders.php';
-    $page = ['type' => 'hosting-wizard', 'title' => 'Qual hospedagem escolher? | ' . SITE_NAME, 'description' => 'Responda quatro perguntas para identificar o tipo de hospedagem adequado ao seu projeto.', 'providers' => hostingProviders()];
+    header('Location: /melhores-hospedagens#quiz', true, 301);
+    exit;
 } elseif ($route === 'melhores-hospedagens') {
     require $projectRoot . '/src/HostingProviders.php';
-    $page = ['type' => 'hosting', 'title' => 'Compare hospedagens de sites e VPS | ' . SITE_NAME, 'description' => 'Qual hospedagem escolher para seu site ou aplicação? Compare 5 opções compartilhadas e 5 de VPS, com recursos, condições e cuidados antes de contratar.', 'providers' => hostingProviders()];
+    $page = ['type' => 'hosting', 'title' => 'Compare serviços HostGator para seu projeto | ' . SITE_NAME, 'description' => 'Compare 13 serviços HostGator por finalidade, perfil indicado e cuidados antes de contratar. Use o quiz para encontrar uma opção para avaliar.', 'providers' => hostingProviders()];
 } elseif (preg_match('~^blog/(.*)$~', $route, $match)) {
     $post = $posts->find($match[1]);
     if ($post === null || !$post['published']) {

@@ -61,8 +61,8 @@ $recentPosts = array_slice($page['posts'], 1, 4);
         <section class="home-guide" aria-labelledby="guide-title">
           <p class="home-section-label">GUIA PARA CONSULTAR</p>
           <h2 id="guide-title">Vai colocar um projeto no ar?</h2>
-          <p>Veja o que considerar ao escolher entre hospedagem compartilhada e VPS.</p>
-          <a class="text-link" href="/melhores-hospedagens">Comparar hospedagens <span aria-hidden="true">→</span></a>
+          <p>Compare 13 serviços HostGator por finalidade e veja os cuidados antes de contratar.</p>
+          <a class="text-link" href="/melhores-hospedagens#quiz">Fazer o quiz ou comparar serviços <span aria-hidden="true">→</span></a>
         </section>
         <p class="home-contact">Tem uma dúvida ou sugestão de assunto? <a href="/contato">Vamos conversar ↗</a></p>
       </aside>

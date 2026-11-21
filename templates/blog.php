@@ -15,7 +15,6 @@
 <div class="wrap blog-cta">
     <aside class="article-hosting-cta">
         <div><h2>Seu próximo projeto começa com uma boa escolha de hospedagem.</h2>
-            <p>Vai publicar um blog, um site para sua empresa ou uma aplicação? Compare cinco opções de hospedagem
-                compartilhada e cinco de VPS, com os pontos que vale conferir antes de contratar.</p></div>
-        <a class="button-link" href="/melhores-hospedagens">Encontrar minha hospedagem</a></aside>
+            <p>Vai publicar um site, hospedar uma aplicação ou avaliar uma ferramenta? Compare 13 serviços HostGator por finalidade e cuidados antes de contratar.</p></div>
+        <a class="button-link" href="/melhores-hospedagens#quiz">Encontrar um serviço para avaliar</a></aside>
 </div>
