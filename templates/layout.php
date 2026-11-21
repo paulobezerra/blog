@@ -4,7 +4,7 @@ function e(string $value): string
     return htmlspecialchars($value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 }
 $title = (string)$page['title']; $description = (string)$page['description'];
-$shareImage = $page['type'] === 'post' && $page['post']['cover'] !== '' ? SITE_URL . $page['post']['cover'] : SITE_URL . '/assets/images/og-cover.svg';
+$shareImage = $page['type'] === 'post' && $page['post']['cover'] !== '' ? SITE_URL . $page['post']['cover'] : SITE_URL . '/assets/images/dominio-registro-br-onde-hospedar.svg';
 ?><!doctype html>
 <html lang="pt-BR">
 <head>

@@ -9,7 +9,7 @@ $recentPosts = array_slice($page['posts'], 1, 4);
       <h1 id="home-title">Domínio, hospedagem<br>e tecnologia<span>.</span></h1>
       <p class="home-intro">Sou desenvolvedor e Tech Lead. Aqui compartilho explicações sobre domínio, hospedagem e os cuidados para colocar um projeto na web.</p>
       <a class="text-link" href="/sobre">Um pouco sobre mim <span aria-hidden="true">↗</span></a>
-      <ul class="home-topics" aria-label="Assuntos do blog"><li>Desenvolvimento</li><li>Backend</li><li>Infraestrutura</li><li>Dicas práticas</li></ul>
+      <ul class="home-topics" aria-label="Assuntos do blog"><li>Domínio</li><li>Hospedagem</li><li>Infraestrutura</li><li>Dicas práticas</li></ul>
     </section>
 
     <div class="home-editorial">

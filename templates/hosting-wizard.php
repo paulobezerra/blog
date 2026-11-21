@@ -1,6 +1,6 @@
 <section class="hosting-wizard-invite" id="quiz" aria-labelledby="wizard-title">
   <div class="wizard-intro"><p class="eyebrow">QUIZ DE ESCOLHA</p><h2 id="wizard-title">Qual serviço vale avaliar para seu projeto?</h2><p>Responda perguntas curtas. A indicação é um ponto de partida; confirme requisitos e condições.</p></div>
-  <noscript><p>O quiz precisa de JavaScript. A comparação dos 13 serviços e seus links continua disponível abaixo.</p></noscript>
+  <noscript><p>O quiz precisa de JavaScript. Para ver as opções, volte à seção “Sites e blogs”, logo acima.</p></noscript>
   <div id="hosting-wizard" hidden>
     <p class="wizard-privacy">Suas respostas ficam nesta página e não são enviadas nem salvas pelo código do quiz.</p>
     <p id="wizard-progress" aria-live="polite"></p>

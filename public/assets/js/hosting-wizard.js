@@ -29,7 +29,9 @@
   const error = document.querySelector('#wizard-error');
   const back = document.querySelector('#wizard-back');
   const adminObjectives = new Set(['app', 'automation']);
-  const activeSteps = () => answer.objective && adminObjectives.has(answer.objective) ? [questions[0], questions[1], questions[2]] : [questions[0], questions[1]];
+  const activeSteps = () => answer.objective && adminObjectives.has(answer.objective)
+    && !(answer.objective === 'app' && answer.need === 'managed')
+    ? [questions[0], questions[1], questions[2]] : [questions[0], questions[1]];
   function clearRecommendation() {
     document.querySelectorAll('.provider-card.is-recommended').forEach(card => card.classList.remove('is-recommended'));
     document.querySelectorAll('.recommendation-badge').forEach(badge => { badge.hidden = true; });
@@ -100,6 +102,10 @@
         showResult();
         return;
       }
+    }
+    if (answer.objective === 'app' && answer.need === 'managed') {
+      showResult();
+      return;
     }
     if (step === activeSteps().length - 1) showResult(); else { step++; render(); }
   });
