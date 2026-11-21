@@ -15,6 +15,6 @@
 <div class="wrap blog-cta">
     <aside class="article-hosting-cta">
         <div><h2>Seu próximo projeto começa com uma boa escolha de hospedagem.</h2>
-            <p>Vai publicar um site, hospedar uma aplicação ou avaliar uma ferramenta? Compare 13 serviços HostGator por finalidade e cuidados antes de contratar.</p></div>
-        <a class="button-link" href="/melhores-hospedagens#quiz">Encontrar um serviço para avaliar</a></aside>
+            <p>Vai publicar um site? Veja opções HostGator e confira requisitos e condições antes de contratar.</p></div>
+        <a class="button-link" href="/melhores-hospedagens#sites">Ver opções HostGator para sites</a></aside>
 </div>

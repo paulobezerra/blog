@@ -51,7 +51,7 @@ Só quando a hospedagem também atende ao projeto e seu custo total faz sentido.
 
 Compare duas propostas completas: domínio separado mais a hospedagem necessária; e pacote com domínio, incluindo períodos obrigatórios e renovações. O artigo sobre [quanto custa ter um site com domínio próprio](/blog/custo-site-dominio-proprio-2026) mostra como separar o desembolso inicial do custo ao longo do tempo.
 
-Se o site ainda não precisa de hospedagem, avalie primeiro o registro avulso. Se já precisa, use os requisitos do projeto para [comparar opções de hospedagem](/melhores-hospedagens), sem deixar a promoção do domínio determinar o plano.
+Se o site ainda não precisa de hospedagem, avalie primeiro o registro avulso. Se já precisa, use os requisitos do projeto para [ver opções de hospedagem da HostGator](/melhores-hospedagens#sites), sem deixar a promoção do domínio determinar o plano.
 
 ## O que conferir antes de fechar
 

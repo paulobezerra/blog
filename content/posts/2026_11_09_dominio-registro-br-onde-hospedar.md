@@ -28,7 +28,7 @@ Para **um site estático**, formado por arquivos HTML, CSS e JavaScript, uma pla
 
 Uma **VPS** faz sentido quando o projeto exige controle sobre o servidor ou configurações que a hospedagem compartilhada não oferece. Em uma VPS sem gerenciamento, alguém precisa cuidar de atualizações, segurança e backups. Já “cloud” descreve uma forma de fornecer infraestrutura, mas o nome sozinho não informa quem administra o ambiente. Um serviço gerenciado pode assumir parte dessas tarefas: confira exatamente quais estão no contrato.
 
-Se você pretende contratar compartilhada ou VPS, [compare as opções de hospedagem](/melhores-hospedagens) a partir da tecnologia do site e da responsabilidade técnica que pode assumir.
+Se você pretende contratar compartilhada ou VPS, [veja opções de hospedagem da HostGator](/melhores-hospedagens#sites) a partir da tecnologia do site e da responsabilidade técnica que pode assumir.
 
 ## O que conferir antes de pagar
 

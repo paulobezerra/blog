@@ -58,4 +58,4 @@ Se o cadastro já estiver vinculado a um provedor, consulte as orientações de 
 
 Escolha o Registro.br se a prioridade é registrar o `.com.br` diretamente e você pode cuidar da renovação e das configurações. Considere um intermediário quando a ajuda oferecida ou a conveniência de centralizar a gestão justificar o custo, com titularidade e condições de saída claras.
 
-Depois de reservar o endereço, escolha onde o site vai funcionar. Se precisar contratar esse serviço, [compare as opções de hospedagem](/melhores-hospedagens) conforme a tecnologia e os recursos do projeto.
+Depois de reservar o endereço, escolha onde o site vai funcionar. Se precisar contratar esse serviço, [veja opções de hospedagem da HostGator](/melhores-hospedagens#sites) conforme a tecnologia e os recursos do projeto.

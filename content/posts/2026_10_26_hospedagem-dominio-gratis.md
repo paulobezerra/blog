@@ -59,4 +59,4 @@ Quem já possui um domínio deve conferir se a promoção serve para seu caso. N
 
 Confira o nome disponível, a extensão contemplada e o prazo para resgate. Registre também o valor de renovação de cada serviço, as regras de cancelamento e eventuais descontos do reembolso relativos ao domínio. Mantenha o cadastro do titular e o acesso à conta sob seu controle.
 
-Escolha primeiro a hospedagem que atende ao projeto e depois compare o custo completo. Você pode [comparar opções de hospedagem](/melhores-hospedagens) usando esses critérios. Entre planos equivalentes, o domínio incluído ajuda; quando exige gastar mais em recursos desnecessários, contratar o registro separadamente pode ser a melhor conta.
+Escolha primeiro a hospedagem que atende ao projeto e depois compare o custo completo. Você pode [ver opções de hospedagem da HostGator](/melhores-hospedagens#sites) usando esses critérios. Entre planos equivalentes, o domínio incluído ajuda; quando exige gastar mais em recursos desnecessários, contratar o registro separadamente pode ser a melhor conta.

@@ -17,12 +17,12 @@ require $projectRoot . '/vendor/autoload.php';
 require $projectRoot . '/src/Posts.php';
 
 const SITE_NAME = 'Paulo Bezerra';
-const SITE_URL = 'https://paulobezerra.eti.br';
+const SITE_URL = 'https://blog.paulobezerra.eti.br';
 $analyticsId = getenv('GA4_MEASUREMENT_ID') ?: '';
 $analyticsId = preg_match('/\AG-[A-Z0-9]+\z/', $analyticsId) ? $analyticsId : '';
 $posts = new Posts($projectRoot . '/content/posts');
 $route = trim((string)($_GET['route'] ?? parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH)), '/');
-$page = ['type' => 'home', 'title' => SITE_NAME, 'description' => 'Tecnologia, desenvolvimento de software e ferramentas digitais, com ideias práticas para a web.'];
+$page = ['type' => 'home', 'title' => 'Domínio, hospedagem e tecnologia | ' . SITE_NAME, 'description' => 'Explicações sobre domínio, hospedagem e os cuidados para colocar um projeto na web.'];
 $items = $posts->all();
 $status = 200;
 
@@ -44,7 +44,7 @@ if ($route === '' || $route === 'index.php') {
     exit;
 } elseif ($route === 'melhores-hospedagens') {
     require $projectRoot . '/src/HostingProviders.php';
-    $page = ['type' => 'hosting', 'title' => 'Compare serviços HostGator para seu projeto | ' . SITE_NAME, 'description' => 'Compare 13 serviços HostGator por finalidade, perfil indicado e cuidados antes de contratar. Use o quiz para encontrar uma opção para avaliar.', 'providers' => hostingProviders()];
+    $page = ['type' => 'hosting', 'title' => 'Compare serviços HostGator para seu projeto | ' . SITE_NAME, 'description' => 'Entenda qual serviço HostGator faz sentido para seu projeto e confira cuidados com requisitos, cobrança e renovação antes de contratar.', 'providers' => hostingProviders()];
 } elseif (preg_match('~^blog/(.*)$~', $route, $match)) {
     $post = $posts->find($match[1]);
     if ($post === null || !$post['published']) {

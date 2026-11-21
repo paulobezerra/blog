@@ -63,6 +63,18 @@
     return bySlug[slug];
   }
   function showResult() {
+    const inconclusive = answer.objective === 'app' && answer.need === 'managed';
+    const link = document.querySelector('#wizard-service-link');
+    if (inconclusive) {
+      document.querySelector('#wizard-result-title').textContent = 'Ainda não há informação suficiente para indicar um serviço';
+      document.querySelector('#wizard-reason').textContent = 'Defina os requisitos da aplicação e quem administrará o ambiente antes de contratar.';
+      document.querySelector('#wizard-caution').textContent = 'Uma solução gerenciada precisa ser confirmada com o fornecedor conforme os requisitos do projeto.';
+      link.hidden = true;
+      form.hidden = true; result.hidden = false;
+      document.querySelector('#wizard-progress').textContent = 'Orientação';
+      document.querySelector('#wizard-result-title').focus();
+      return;
+    }
     const item = recommendation();
     const adminMissing = (answer.objective === 'app' || answer.objective === 'automation') && answer.admin !== 'yes';
     document.querySelector('#wizard-result-title').textContent = item.name;
@@ -72,7 +84,7 @@
     document.querySelector('#wizard-caution').textContent = adminMissing
       ? `Atenção: serviços de servidor podem exigir administração técnica contínua. Você informou que não há responsável técnico ou que isso ainda não está definido. Não considere VPS uma solução sem manutenção. Confirme com a HostGator o que é gerenciado e quem cuida de atualizações, segurança, backups e monitoramento. ${item.care}`
       : `${item.care} Confirme compatibilidade e condições atuais diretamente com a HostGator.`;
-    const link = document.querySelector('#wizard-service-link'); link.href = `#service-${item.slug}`;
+    link.hidden = false; link.href = `#service-${item.slug}`;
     form.hidden = true; result.hidden = false; document.querySelector('#wizard-progress').textContent = 'Indicação para avaliação';
     document.querySelector('#wizard-result-title').focus();
   }
@@ -81,6 +93,14 @@
     const selected = field.querySelector('input:checked');
     if (!selected) { error.textContent = 'Escolha uma opção para continuar.'; field.querySelector('input')?.focus(); return; }
     const current = activeSteps()[step]; answer[current.key] = selected.value;
+    if (current.key === 'objective') {
+      const onlyNeed = needOptions[answer.objective];
+      if (onlyNeed.length === 1) {
+        answer.need = onlyNeed[0][0];
+        showResult();
+        return;
+      }
+    }
     if (step === activeSteps().length - 1) showResult(); else { step++; render(); }
   });
   back.addEventListener('click', () => { if (step > 0) { step--; render(); } });

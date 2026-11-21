@@ -67,4 +67,4 @@ Hospedagem compartilhada costuma atender projetos simples, mas aplicações com 
 
 Escolha um plano da HostGator se o cPanel facilitar sua manutenção e a proposta atender aos requisitos com custo aceitável. Escolha a Hostinger se o hPanel combinar com sua rotina e o pacote oferecer os recursos necessários dentro do orçamento, inclusive na renovação.
 
-Se ambos atenderem, use o custo completo, a política de backups e as condições de suporte como desempate. Para ampliar a avaliação, [compare outras opções de hospedagem](/melhores-hospedagens). Se precisar apenas do domínio, decida pelo registro avulso antes de assumir um contrato de hospedagem.
+Se ambos atenderem, use o custo completo, a política de backups e as condições de suporte como desempate. Para ampliar a avaliação, [veja opções de hospedagem da HostGator](/melhores-hospedagens#sites). Se precisar apenas do domínio, decida pelo registro avulso antes de assumir um contrato de hospedagem.

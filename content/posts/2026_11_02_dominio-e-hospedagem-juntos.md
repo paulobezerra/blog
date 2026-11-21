@@ -57,4 +57,4 @@ Domínio e hospedagem não precisam ficar na mesma empresa. É possível usar um
 
 Separar pode ser útil se você já tem domínio ou prefere gerenciar sua renovação independentemente da hospedagem. Em compensação, haverá duas contas e uma etapa de configuração entre os serviços. Contratar junto costuma ser mais conveniente para quem quer centralizar essa gestão.
 
-Se a contratação conjunta atende ao seu caso, [compare as opções de hospedagem](/melhores-hospedagens) com os requisitos do site em mãos. Escolha o plano que oferece os recursos necessários e uma renovação que cabe no orçamento; trate o domínio incluído como economia inicial, não como o único critério da compra.
+Se a contratação conjunta atende ao seu caso, [veja opções de hospedagem da HostGator](/melhores-hospedagens#sites) com os requisitos do site em mãos. Escolha o plano que oferece os recursos necessários e uma renovação que cabe no orçamento; trate o domínio incluído como economia inicial, não como o único critério da compra.

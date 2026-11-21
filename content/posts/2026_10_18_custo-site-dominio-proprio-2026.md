@@ -64,4 +64,4 @@ O artigo sobre [hospedagem com domínio grátis](/blog/hospedagem-dominio-gratis
 
 Comece listando os recursos necessários e peça o total de contratação e renovação, incluindo extras. Para comparar propostas, use o mesmo horizonte de tempo e separe serviços técnicos do trabalho de criação e manutenção.
 
-Você pode [comparar opções de hospedagem](/melhores-hospedagens) com esse orçamento em mãos. Escolha um plano que comporte o site e cujo próximo ciclo também caiba no bolso; o menor valor mensal do anúncio, sozinho, não responde quanto o projeto vai custar.
+Você pode [ver opções de hospedagem da HostGator](/melhores-hospedagens#sites) com esse orçamento em mãos. Escolha um plano que comporte o site e cujo próximo ciclo também caiba no bolso; o menor valor mensal do anúncio, sozinho, não responde quanto o projeto vai custar.

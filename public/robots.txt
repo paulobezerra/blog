@@ -3,4 +3,4 @@ Allow: /
 Disallow: /content/
 Disallow: /src/
 Disallow: /templates/
-Sitemap: https://paulobezerra.eti.br/sitemap.xml
+Sitemap: https://blog.paulobezerra.eti.br/sitemap.xml

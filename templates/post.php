@@ -16,6 +16,6 @@
             </aside><?php endif; ?><?= $post['content'] ?></div>
     <aside class="article-hosting-cta">
         <div><h2>Procurando uma hospedagem para seu projeto?</h2>
-            <p>Compare 13 serviços HostGator por finalidade, perfil indicado e cuidados sobre condições, compatibilidade e manutenção.</p></div>
-        <a class="button-link" href="/melhores-hospedagens">Comparar serviços HostGator</a></aside>
+            <p>Veja opções HostGator para publicar um site e confira requisitos, compatibilidade e manutenção antes de contratar.</p></div>
+        <a class="button-link" href="/melhores-hospedagens#sites">Ver opções HostGator para sites</a></aside>
 </article>

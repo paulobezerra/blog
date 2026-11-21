@@ -7,7 +7,7 @@ function hostingProviders(): array
     return [
         'sites' => [
             ['slug'=>'hospedagem-sites','name'=>'Hospedagem de Sites','category'=>'sites','description'=>'Serviço de hospedagem para publicar sites e projetos web. Consulte os recursos e limites do plano atual.','profile'=>'Quem quer colocar um site ou blog no ar sem administrar um servidor completo.','purpose'=>'Hospedar um site ou blog','care'=>'Confirme limites, e-mail, backups, migração, ciclo de cobrança e renovação.'],
-            ['slug'=>'criador-sites','name'=>'Criador de Sites','category'=>'sites','description'=>'Ferramenta para criar e publicar um site usando o produto Criador de Sites.','profile'=>'Quem prefere montar um site com uma ferramenta de criação incluída.','purpose'=>'Criar e publicar um site com ferramenta visual','care'=>'Verifique modelos, recursos de edição, domínio, exportação e o que ocorre se cancelar.'],
+            ['slug'=>'criador-sites','name'=>'Criador de Sites','category'=>'sites','description'=>'Ferramenta visual para montar e publicar um site.','profile'=>'Quem prefere montar um site com uma ferramenta de criação incluída.','purpose'=>'Criar e publicar um site com ferramenta visual','care'=>'Verifique modelos, recursos de edição, domínio, exportação e o que ocorre se cancelar.'],
             ['slug'=>'hospedagem-wordpress','name'=>'Hospedagem WordPress','category'=>'sites','description'=>'Hospedagem identificada para projetos que usam WordPress.','profile'=>'Quem pretende publicar ou manter um site baseado em WordPress.','purpose'=>'Hospedar um site WordPress','care'=>'Confirme versões, plugins permitidos, migração, backups e responsabilidades de atualização.'],
         ],
         'infraestrutura' => [

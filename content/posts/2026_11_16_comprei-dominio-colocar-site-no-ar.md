@@ -28,7 +28,7 @@ Se você usa um construtor ou uma plataforma de loja, confira se o plano já inc
 
 Para um site próprio, o ambiente precisa ser compatível com a aplicação. Arquivos estáticos têm necessidades diferentes de um sistema que executa PHP e acessa banco de dados. Peça esses requisitos a quem desenvolveu o projeto antes de contratar.
 
-Se ainda está nessa decisão, [compare as opções de hospedagem](/melhores-hospedagens). O artigo sobre [HostGator ou Hostinger](/blog/hostgator-ou-hostinger) ajuda a avaliar painel, renovação e recursos quando essas empresas estão entre suas opções.
+Se ainda está nessa decisão, [veja opções de hospedagem da HostGator](/melhores-hospedagens#sites). O artigo sobre [HostGator ou Hostinger](/blog/hostgator-ou-hostinger) ajuda a avaliar painel, renovação e recursos quando essas empresas estão entre suas opções.
 
 Cadastre o domínio no painel da hospedagem ou da plataforma e publique a primeira versão do site. Quando houver endereço de prévia, use-o para revisar o conteúdo antes de conectar o domínio. Você não precisa transferir o registro para fazer essa conexão.
 

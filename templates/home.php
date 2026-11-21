@@ -6,8 +6,8 @@ $recentPosts = array_slice($page['posts'], 1, 4);
   <div class="home-layout wrap">
     <section class="home-hero" aria-labelledby="home-title">
       <p class="home-kicker">PAULO BEZERRA / BLOG PESSOAL</p>
-      <h1 id="home-title">Código, descobertas<br>e o que aprendo pelo caminho<span>.</span></h1>
-      <p class="home-intro">Sou desenvolvedor e Tech Lead. Este é meu espaço para compartilhar aprendizados sobre desenvolvimento, dicas práticas e decisões do dia a dia de quem constrói software.</p>
+      <h1 id="home-title">Domínio, hospedagem<br>e tecnologia<span>.</span></h1>
+      <p class="home-intro">Sou desenvolvedor e Tech Lead. Aqui compartilho explicações sobre domínio, hospedagem e os cuidados para colocar um projeto na web.</p>
       <a class="text-link" href="/sobre">Um pouco sobre mim <span aria-hidden="true">↗</span></a>
       <ul class="home-topics" aria-label="Assuntos do blog"><li>Desenvolvimento</li><li>Backend</li><li>Infraestrutura</li><li>Dicas práticas</li></ul>
     </section>
@@ -61,8 +61,8 @@ $recentPosts = array_slice($page['posts'], 1, 4);
         <section class="home-guide" aria-labelledby="guide-title">
           <p class="home-section-label">GUIA PARA CONSULTAR</p>
           <h2 id="guide-title">Vai colocar um projeto no ar?</h2>
-          <p>Compare 13 serviços HostGator por finalidade e veja os cuidados antes de contratar.</p>
-          <a class="text-link" href="/melhores-hospedagens#quiz">Fazer o quiz ou comparar serviços <span aria-hidden="true">→</span></a>
+          <p>Escolha entre hospedagem de sites, WordPress e criador de sites, e confira os cuidados antes de contratar.</p>
+          <a class="text-link" href="/melhores-hospedagens#sites">Ver opções HostGator para sites <span aria-hidden="true">→</span></a>
         </section>
         <p class="home-contact">Tem uma dúvida ou sugestão de assunto? <a href="/contato">Vamos conversar ↗</a></p>
       </aside>
