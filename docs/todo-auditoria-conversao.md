@@ -127,7 +127,7 @@ Estas verificações dependem de acesso, evidências ou publicação autorizada 
 - [ ] No Search Console, verificar indexação das páginas e canonical selecionado pelo Google. Resposta HTTP 200 não comprova indexação.
 - [ ] Abrir os links afiliados em navegador comum e conferir o produto de destino. Na auditoria, os 13 acessos automatizados retornaram 403; isso não comprova links quebrados.
 - [ ] Conferir atribuição no painel de afiliados usando procedimento permitido pelo programa. Não realizar compra de teste sem autorização.
-- [ ] Obter evidência das regras atuais da HostGator para tráfego pago, uso de marca e palavras-chave. A documentação local não comprova autorização para todas essas práticas.
+- [x] Consultar os [termos oficiais do programa de afiliados da HostGator](https://www.hostgator.com.br/termos-afiliados). Na consulta de 21/11/2026, os termos proíbem anúncios patrocinados em redes sociais e compra de palavras-chave relacionadas à marca, inclusive combinações com outros termos; não interpretar isso como autorização ampla para outras formas de tráfego pago.
 - [ ] Conferir no GTM/Analytics os eventos de saída para a HostGator e sua distinção de vendas efetivas. O carregamento do GTM não comprova medição correta.
 - [ ] Avaliar aprovação real no Google Ads pela conta correspondente. Não prometer aprovação com base nesta lista.
 
@@ -138,9 +138,17 @@ Estas verificações dependem de acesso, evidências ou publicação autorizada 
 - Comandos e verificações executados, com resultados: `php -l` em todos os PHP alterados e nos templates relevantes passou; `node --check public/assets/js/hosting-wizard.js` passou; renderizações CLI de home, página comercial, artigo e sitemap passaram; os canonical e `og:url` correspondem ao domínio novo, as imagens sociais usam esse domínio e `mainEntityOfPage` do artigo corresponde ao canonical; sitemap gerado analisado como XML válido; via HTTP local, rota inexistente retornou 404, home, página comercial, artigo, robots.txt e endpoint interno do sitemap retornaram 200; as 13 URLs renderizadas correspondem exatamente à tabela de `docs/hostgator-afiliados.md`, com `target="_blank"` e `rel="sponsored nofollow noopener"`; âncoras de categoria e `#sites` existem; `git diff --check` passou. Capturas no Chrome headless em 390 px e 1440 px foram inspecionadas, sem sobreposição ou rolagem horizontal aparente.
 - Cenários do quiz verificados: Site → já tenho/vou desenvolver → Hospedagem de Sites; Site → ferramenta visual → Criador de Sites; WordPress → Hospedagem WordPress sem pergunta redundante; Revenda → Revenda sem pergunta redundante; Aplicação → gerenciada/não dimensionada → inconclusivo sem link recomendado; Aplicação → VPS → sem responsável técnico → ressalva de administração; Automação → n8n → responsável técnico → VPS com n8n; Ferramenta específica → AllPass; refazer após resultado inconclusivo → WordPress com recomendação/link restaurado; navegação Voltar e botão de menu móvel. Todos passaram no Chrome headless.
 - Verificações não executadas e motivo: O caminho público `/sitemap.xml` não foi validado no servidor embutido, que não aplica `.htaccess`; o endpoint interno `/?route=sitemap` retornou XML válido via HTTP. As verificações restantes do item 7 foram executadas.
-- Pendências externas: todas as verificações do item 8 permanecem pendentes; não houve consulta pública, publicação, teste de links afiliados ou ação externa.
+- Pendências externas no registro anterior: nenhuma consulta pública, publicação, teste de links afiliados ou ação externa foi feita naquela execução.
 - Estado da branch e alterações pré-existentes preservadas: branch `main`; no início já constavam `AD copy-site-paulo-bezerra.md` e `AD skill-gerar-posts-blog.md` (adições staged com arquivos removidos da árvore de trabalho) e o roteiro fornecido estava não rastreado. Essas alterações foram preservadas sem edição.
 - Publicação: não realizada.
+
+## Validação final e pendências externas — 21/11/2026
+
+- Validação local repetida: `php -l` em todos os arquivos PHP encontrados no projeto passou; `node --check public/assets/js/hosting-wizard.js` passou; `git diff --check` passou. Não foram feitas alterações no código nesta etapa.
+- Site público: não validado. A tentativa de acesso a `https://blog.paulobezerra.eti.br/` falhou com `curl: (6) Could not resolve host`; a ferramenta de consulta web também não conseguiu abrir home, `/robots.txt` nem `/sitemap.xml`. Isso não permite concluir que o site esteja fora do ar para visitantes em geral.
+- Política de afiliados: consulta direta aos termos oficiais confirmou as restrições descritas no item 8. Isso responde à dúvida sobre marca e palavras-chave, mas não constitui aprovação da conta nem autorização para práticas não explicitamente permitidas.
+- Permanecem pendentes: validação pública de canonical/robots/sitemap após a publicação; indexação e canonical escolhido no Search Console; destino dos 13 links em navegador comum; atribuição no painel de afiliados; conferência dos eventos de saída no GTM/Analytics; e avaliação real de anúncios na conta Google Ads. Não houve publicação, compra de teste ou alteração em contas externas.
+- As ferramentas ativas não oferecem acesso direto às contas Search Console/Analytics/Ads nem ao painel de afiliados. O catálogo sugere conectores de terceiros, mas nenhum foi instalado ou conectado nesta execução.
 
 ## Revisão do Astra — itens 1 a 7
 

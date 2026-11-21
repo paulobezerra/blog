@@ -25,7 +25,7 @@ Na raiz do projeto:
 composer install --no-dev --optimize-autoloader
 ```
 
-O Markdown é convertido por `league/commonmark`, instalado em `vendor/`. Inclua essa pasta no pacote de publicação. Não é necessário executar Composer na hospedagem.
+O Markdown é convertido por `league/commonmark`; o roteamento HTTP usa Slim 4. Inclua `vendor/` no pacote de publicação. Não é necessário executar Composer na hospedagem.
 
 ## Publicar em hospedagem compartilhada
 
@@ -33,7 +33,7 @@ O Markdown é convertido por `league/commonmark`, instalado em `vendor/`. Inclua
 2. Envie o projeto completo, incluindo `vendor/`, `content/`, `src/`, `templates/` e `public/`. Apenas `public/` deve ser acessível pelo domínio; mantenha Composer e os demais diretórios fora do document root.
 3. Ative `mod_rewrite` e permita `.htaccess`. O site precisa ler os Markdown e a dependência; não precisa gravar arquivos.
 4. Confira as páginas `/`, `/blog`, `/sobre`, `/contato`, `/privacidade` e `/sitemap.xml`.
-5. Se usar outro domínio, altere `SITE_URL` em `public/index.php` e a linha `Sitemap` em `public/robots.txt`.
+5. Se usar outro domínio, altere `SITE_URL` em `src/bootstrap.php` e a linha `Sitemap` em `public/robots.txt`.
 
 O único `.htaccess` fica em `public/` e direciona as rotas ao front controller. Como os arquivos de aplicação, conteúdo, dependências e configuração ficam fora do document root, não são servidos pelo Apache. Não publique credenciais nesse repositório.
 
@@ -91,5 +91,5 @@ Esses dois marcadores ativam o aviso de transparência no artigo. Use-os apenas 
 
 ## Dados pessoais e domínio
 
-Altere `SITE_NAME` e `SITE_URL` em `public/index.php`, o e-mail nas páginas `templates/contato.php` e `templates/privacidade.php`, o nome e a apresentação em `templates/sobre.php`, e a URL do sitemap em `public/robots.txt`. Ajuste também o conteúdo de privacidade se adicionar ferramentas de análise, publicidade ou coleta de dados.
+Altere `SITE_NAME` e `SITE_URL` em `src/bootstrap.php`, o e-mail nas páginas `templates/contato.php` e `templates/privacidade.php`, o nome e a apresentação em `templates/sobre.php`, e a URL do sitemap em `public/robots.txt`. Ajuste também o conteúdo de privacidade se adicionar ferramentas de análise, publicidade ou coleta de dados.
 # blog
