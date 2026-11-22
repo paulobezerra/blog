@@ -5,10 +5,12 @@ $shareImage = $page['type'] === 'post' && $page['post']['cover'] !== '' ? SITE_U
 <html lang="pt-BR">
 <head>
     <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MGLLSH64"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18588112608"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+      gtag('config', 'AW-18588112608');
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
