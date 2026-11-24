@@ -17,9 +17,6 @@ $shareImage = $page['type'] === 'post' && $page['post']['cover'] !== '' ? SITE_U
     <title><?= e($title) ?></title>
     <meta name="description" content="<?= e($description) ?>">
     <link rel="canonical" href="<?= e($page['canonical']) ?>">
-<?php if ($page['type'] === 'hosting-sites'): ?>
-    <meta name="robots" content="noindex, follow">
-<?php endif; ?>
     <meta property="og:type" content="<?= $page['type'] === 'post' ? 'article' : 'website' ?>">
     <meta property="og:site_name" content="<?= e(SITE_NAME) ?>">
     <meta property="og:title" content="<?= e($title) ?>">
@@ -53,7 +50,6 @@ $shareImage = $page['type'] === 'post' && $page['post']['cover'] !== '' ? SITE_U
                 'blog' => 'blog.php',
                 'post' => 'post.php',
                 'hosting' => 'hosting.php',
-                'hosting-sites' => 'hosting-sites.php',
                 'sobre' => 'sobre.php',
                 'contato' => 'contato.php',
                 'privacidade' => 'privacidade.php',
