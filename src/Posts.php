@@ -70,6 +70,7 @@ final class Posts
             'category' => $meta['category'] ?? '', 'tags' => isset($meta['tags']) ? array_map('trim', explode(',', $meta['tags'])) : [],
             'cover' => $meta['cover'] ?? '', 'published' => $published,
             'content' => $html, 'affiliate' => $affiliate,
+            'cta_service' => $meta['cta_service'] ?? '',
         ];
     }
 }

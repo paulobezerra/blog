@@ -29,6 +29,17 @@ function hostingProviders(): array
     ];
 }
 
+/** @return array<string, string>|null */
+function hostingProvider(string $slug): ?array
+{
+    foreach (hostingProviders() as $providers) {
+        foreach ($providers as $provider) {
+            if ($provider['slug'] === $slug) return $provider;
+        }
+    }
+    return null;
+}
+
 function hostingAffiliateLinks(): array
 {
     return [

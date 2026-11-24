@@ -57,6 +57,17 @@ return static function (App $app, Posts $posts): void {
         ], '/melhores-hospedagens');
     });
 
+    $app->get('/hospedagem-de-sites', static function (ServerRequestInterface $request, ResponseInterface $response): ResponseInterface {
+        require_once __DIR__ . '/HostingProviders.php';
+        return renderPage($response, [
+            'type' => 'hosting-sites',
+            'title' => 'Hospedagem de sites: opções HostGator | ' . SITE_NAME,
+            'description' => 'Veja as opções HostGator para publicar um site ou blog, para quem cada uma é indicada e o que conferir antes de contratar.',
+            'providers' => hostingProviders()['sites'],
+            'posts' => [],
+        ], '/hospedagem-de-sites');
+    });
+
     $app->get('/escolher-hospedagem', static fn(ServerRequestInterface $request, ResponseInterface $response): ResponseInterface =>
         $response->withHeader('Location', '/melhores-hospedagens#quiz')->withStatus(301));
 
