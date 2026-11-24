@@ -8,7 +8,7 @@ $ctaCopy = [
     'outras' => ['Quer avaliar esta solução para seu projeto?', 'Veja para quem o serviço é indicado e confira requisitos, recursos e condições antes de contratar.'],
 ];
 [$ctaTitle, $ctaText, $ctaLabel, $ctaHref] = $ctaService !== null && isset($ctaCopy[$ctaService['category']])
-    ? [...$ctaCopy[$ctaService['category']], 'Ver ' . $ctaService['name'] . ' na HostGator', '/melhores-hospedagens#service-' . $ctaService['slug']]
+    ? [...$ctaCopy[$ctaService['category']], 'Ver ' . $ctaService['name'], '/melhores-hospedagens#service-' . $ctaService['slug']]
     : ['Procurando uma hospedagem para seu projeto?', 'Veja opções HostGator para publicar um site e confira requisitos, compatibilidade e manutenção antes de contratar.', 'Ver opções HostGator para sites', '/melhores-hospedagens#sites']; ?>
 <article class="article-wrap wrap">
     <header class="article-header"><a class="back-link" href="/blog">← Todos os artigos</a>
